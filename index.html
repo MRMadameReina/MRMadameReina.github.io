@@ -1,10 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Author • Course Creator • Creative Visionary</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background: linear-gradient(135deg, #8e4585 0%, #1a1a1a 100%);
+            color: #f8f6f0;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            color: #f8f6f0;
+        }
+        .tagline {
+            font-size: 1.3em;
+            opacity: 0.9;
+            color: #f8f6f0;
+        }
+        .section {
+            margin: 40px 0;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            border-left: 5px solid #ffd700;
+        }
+        .three-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .column {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+        .icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        h2 {
+            color: #f8f6f0;
+            margin-bottom: 20px;
+        }
+        h3 {
+            color: #f8f6f0;
+            margin-bottom: 15px;
+        }
+        p {
+            color: #f8f6f0;
+            line-height: 1.6;
+        }
+        a {
+            color: #ffb3ba;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #ffd700;
+            text-decoration: underline;
+        }
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #ffd700, #ffb3ba);
+            color: #1a1a1a;
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            color: #1a1a1a;
+        }
+        @media (max-width: 768px) {
+            .three-columns {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .container {
+                padding: 20px;
+                margin: 10px;
+            }
+        }
+    </style>
 </head>
-<body style="background-color: #8e4585; color: #f8f6f0; font-family: Arial; padding: 20px;">
-    <h1>Hello World!</h1>
-    <p>My website is working!</p>
+<body>
+    <div class="container">
+        <header>
+            <h1>Your Name Here</h1>
+            <p class="tagline">Author • Course Creator • Creative Visionary</p>
+        </header>
+        
+        <div class="section">
+            <h2>Welcome to Your Creative Hub</h2>
+            <p>This is your one-stop destination for everything I create! Get my latest book, access exclusive courses, and stay updated on all my exciting projects including my upcoming musical.</p>
+        </div>
+
+        <div class="three-columns">
+            <div class="column">
+                <div class="icon">📚</div>
+                <h3>My Published Book</h3>
+                <p>Available now on Kindle! [Book Title] - your guide to [what your book teaches/is about].</p>
+                <a href="#" class="cta-button">🛒 Buy on Amazon</a>
+            </div>
+            <div class="column">
+                <div class="icon">🎓</div>
+                <h3>Exclusive Courses</h3>
+                <p>Deep-dive learning experiences and exclusive content you won't find anywhere else.</p>
+                <a href="#" class="cta-button">📚 Access My Courses</a>
+            </div>
+            <div class="column">
+                <div class="icon">🎭</div>
+                <h3>Musical Updates</h3>
+                <p>Stay in the loop about my original musical in development - behind-the-scenes content and progress updates!</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>What's Available Right Now</h2>
+            <p><strong>📖 Published Book:</strong> "[Your Book Title]" - Available on Kindle</p>
+            <p><strong>🎓 Online Courses:</strong> [Course platform name] - Exclusive content and community</p>
+            <p><strong>🎵 Musical Project:</strong> In development - Get updates here first!</p>
+        </div>
+
+        <div class="section">
+            <h2>Let's Connect</h2>
+            <p>Ready to get started or have questions?</p>
+            <p>📧 Email: your.email@example.com</p>
+            <p>🌐 Follow my journey on social media</p>
+        </div>
+    </div>
 </body>
 </html>
